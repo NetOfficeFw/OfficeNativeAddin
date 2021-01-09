@@ -1,0 +1,26 @@
+HKCR
+{
+	SharedAddin.Connect.1 = s 'Connect Class'
+	{
+		CLSID = s '{B4FF6BCB-39C6-4475-911B-87D44C963D9F}'
+	}
+	SharedAddin.Connect = s 'Connect Class'
+	{
+		CLSID = s '{B4FF6BCB-39C6-4475-911B-87D44C963D9F}'
+		CurVer = s 'SharedAddin.Connect.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove '{B4FF6BCB-39C6-4475-911B-87D44C963D9F}' = s 'Connect Class'
+		{
+			ProgID = s 'SharedAddin.Connect.1'
+			VersionIndependentProgID = s 'SharedAddin.Connect'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{7C29E2DF-C75C-4A39-9DA2-D519CEFF30CA}'
+		}
+	}
+}
