@@ -24,3 +24,28 @@ HKCR
 		}
 	}
 }
+
+HKCU
+{
+	NoRemove Software
+	{
+		NoRemove Microsoft
+		{
+			NoRemove Office
+			{
+				NoRemove PowerPoint
+				{
+					NoRemove Addins
+					{
+						ForceRemove SharedAddin.Connect.1
+						{
+							val LoadBehavior = d 3
+							val FriendlyName = s 'Shared Native Addin'
+							val Description = s 'Shared add-in in Visual C++ for Microsoft Office.'
+						}
+					}
+				}
+			}
+		}
+	}
+}
