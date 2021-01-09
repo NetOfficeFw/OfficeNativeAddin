@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharedAddin", "SharedAddin\SharedAddin.vcproj", "{FE73BA92-CFD5-4CA9-AFB3-BCA5B979EB57}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharedAddin", "SharedAddin\SharedAddin.vcxproj", "{FE73BA92-CFD5-4CA9-AFB3-BCA5B979EB57}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SharedAddinSetup", "SharedAddinSetup\SharedAddinSetup.vdproj", "{40D34EAC-3BFB-43D1-8905-567FEC128C96}"
 EndProject

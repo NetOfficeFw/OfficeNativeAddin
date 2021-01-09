@@ -15,7 +15,7 @@
 #endif
 
 #ifndef _WIN32_WINNT		// Allow use of features specific to Windows NT 4 or later.
-#define _WIN32_WINNT 0x0400	// Change this to the appropriate value to target Windows 2000 or later.
+#define _WIN32_WINNT 0x0501	// Change this to the appropriate value to target Windows 2000 or later.
 #endif						
 
 #ifndef _WIN32_WINDOWS		// Allow use of features specific to Windows 98 or later.
@@ -41,8 +41,8 @@
 
 #pragma warning( disable : 4278 )
 #pragma warning( disable : 4146 )
-	//The following #import imports the IDTExtensibility2 interface based on it's LIBID
-	#import "libid:AC0714F2-3D04-11D1-AE7D-00A0C90F26F4" version("1.0") lcid("0")  raw_interfaces_only named_guids
+	//The following #import imports the IDTExtensibility2 interface
+	#import <MSADDNDR.DLL> raw_interfaces_only named_guids
 
 #pragma warning( default : 4146 )
 #pragma warning( default : 4278 )
